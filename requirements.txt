@@ -1,0 +1,6 @@
+anyio
+fastapi==0.104.1
+flask
+rembg
+pillow
+gunicorn
