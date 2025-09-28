@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Background Remover</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-        .upload-box { border: 2px dashed #aaa; padding: 20px; display: inline-block; }
-        input[type="file"] { margin: 10px; }
-        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
-    </style>
+    <meta charset="UTF-8">
+    <title>BG Remover</title>
 </head>
 <body>
     <h1>Background Remover</h1>
-    <form action="/remove-bg" method="post" enctype="multipart/form-data">
-        <div class="upload-box">
-            <input type="file" name="image" accept="image/*" required>
-            <br>
-            <button type="submit">Remove Background</button>
-        </div>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Remove Background</button>
     </form>
 </body>
 </html>
